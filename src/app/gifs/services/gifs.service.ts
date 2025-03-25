@@ -10,7 +10,7 @@ const GIF_KEY = 'gifs';
 
 const loadFromLocalStorage = () => {
   const gifs = localStorage.getItem(GIF_KEY);
-  return gifs ? JSON.parse(gifs) : '{}';
+  return gifs ? JSON.parse(gifs) : {};
 }
 
 @Injectable({providedIn: 'root'})
